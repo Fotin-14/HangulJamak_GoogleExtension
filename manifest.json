@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hangul Jamak (Korean Pronouncer)",
+  "version": "1.0",
+  "description": "Adds an opaque background and rounded corners to Netflix subtitles.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "*://*.netflix.com/*",
+    "http://192.168.1.6:8000/*"
+  ]
+}
