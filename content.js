@@ -46,7 +46,7 @@
 		container.style.setProperty('padding', '8px 12px', 'important');
 
 		container.style.setProperty('top', 'auto', 'important');
-		container.style.setProperty('bottom', '20%', 'important');
+		container.style.setProperty('bottom', '25%', 'important');
 
 		container.style.setProperty('left', '50%', 'important');
 		container.style.setProperty('transform', 'translateX(-50%)', 'important');
@@ -156,7 +156,7 @@
 
     	host.style.position = originalStyle.position;
 		host.style.left = '50%';
-    	host.style.bottom = '10%';
+    	host.style.bottom = '15%';
 		host.style.transform = 'translateX(-50%)';
     	host.style.whiteSpace = originalStyle.whiteSpace;
     	host.style.textAlign = originalStyle.textAlign;
@@ -217,7 +217,7 @@
 
 	async function convertToRomaji(text) {
 		try {
-			const response = await fetch('http://192.168.1.6:8000/pronounce', {
+			const response = await fetch('https://hangul-jamak-server.onrender.com/pronounce', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
